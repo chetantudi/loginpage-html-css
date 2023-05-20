@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full-screen-video</title>
+    <link rel="stylesheet" href="sam.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="banner">
+      <video autoplay muted loop>
+        <source
+          src="./video/mixkit-stars-in-space-background-1610-medium.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="content">
+        <h1>Login page</h1>
+        <br /><br />
+
+        <div class="form">
+          <form action="/login" method="post">
+            <label for="uname"> <b>Username</b> </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Username"
+              name="uname"
+              required
+            />
+            <br /><br />
+
+            <label for="password"> <b>Password</b> </label>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <br /><br />
+            <div class="container" style="background-color: #786868cd">
+              <label>
+                <input
+                  type="checkbox"
+                  class="check"
+                  checked="checked"
+                  name="remember"
+                />Remember me
+              </label>
+              <pre></pre>
+              <span class="psw"> <a href="#">Forgot password?</a></span>
+            </div>
+            <br />
+            <button type="submit" class="logbtn">Log in</button><br />
+
+            <p>
+              --------------------------------------Or--------------------------------------
+            </p>
+            <br />
+            Don't have an account?
+            <button type="button" class="createbtn">Create Accout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
